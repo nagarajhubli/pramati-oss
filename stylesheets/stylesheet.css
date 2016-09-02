@@ -4,16 +4,14 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #606c71; }
 
 a {
-  color: #1e6bb8;
+  color: rgb(255,64,129);
   text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
 
 .btn {
   display: inline-block;
@@ -56,8 +54,8 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-color: #3F51B5;
+}
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -111,8 +109,7 @@ a {
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-weight: normal;
-  color: #159957; }
+  font-weight: normal; }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
@@ -243,3 +240,35 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+/* custom styles */
+.main-content h2 {
+  margin-top: 0;
+}
+.card {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  margin-bottom: 1rem;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 10px;
+}
+ul li:last-child {
+  margin-bottom: 0;
+}
+ul li a {
+  position: relative;
+  padding-left: 35px;
+  height: 30px;
+  display: inline-block;
+}
+ul li a img {
+  position: absolute;
+  left: 0;
+}
