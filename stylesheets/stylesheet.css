@@ -242,6 +242,10 @@ a {
     font-size: 0.9rem; } }
 
 /* custom styles */
+.page-header a {
+  color: #fff;
+  text-decoration: underline;
+}
 .main-content h2 {
   margin-top: 0;
 }
@@ -271,4 +275,24 @@ ul li a {
 ul li a img {
   position: absolute;
   left: 0;
+}
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInUp {
+  animation-name: slideInUp;
 }
